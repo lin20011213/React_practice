@@ -36,3 +36,31 @@
     transform: rotate(360deg);
   }
 }
+
+.container {
+  display: flex;       /* 使用Flexbox */
+  justify-content: space-between; /* 在子元素之間添加空間 */
+}
+
+.inputBox {
+  width: 100%;        
+  height: 150px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  text-align: left;
+}
+
+.inputSection, .outputSection {
+  flex: 1;   /* 讓輸入和輸出部分各佔一半的寬度 */
+  margin: 0 20px;  /* 添加邊距 */
+}
+
+.outputBox {
+  width: 100%;        /* 設定輸出框寬度為100%，讓它填充父容器 */
+  height: 150px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  text-align: left;
+}
